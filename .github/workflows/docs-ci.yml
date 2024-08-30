@@ -1,0 +1,32 @@
+name: Testing Documentation Site
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/docs-ci.yml'
+      - 'antora/**'
+      - 'doc/**'
+
+concurrency:
+  # Only run once for latest commit per ref and cancel other (previous) runs.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16.x'
+          cache: 'yarn'
+          cache-dependency-path: 'antora/yarn.lock'
+      - name: Build docs
+        working-directory: antora
+        run: ./author.sh
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: antora/_site/keycloak-sre-sig

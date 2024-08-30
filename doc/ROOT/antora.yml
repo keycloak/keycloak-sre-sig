@@ -1,0 +1,6 @@
+title: Keycloak SRE SIG
+name: ROOT
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
+

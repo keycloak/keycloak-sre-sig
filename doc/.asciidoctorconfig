@@ -1,0 +1,5 @@
+:linkcss:
+:stylesdir: https://www.keycloak.org/keycloak-sre-sig/antora/css/
+:stylesheet: preview.css
+
+:github-files: {asciidoctorconfigdir}/../
