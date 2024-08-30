@@ -1,3 +1,5 @@
+= 1st Keycloak SRE SIG Meeting (19th August 2024)
+
 == Should we record? yes/no
 yes
 
