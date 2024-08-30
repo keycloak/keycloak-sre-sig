@@ -1,0 +1,48 @@
+== Should we record? yes/no
+yes
+
+== Why having a SRE SIG?
+To learn from each other what Keycloak can do today, and to expand Keycloak capabilities,
+
+== Possible topics to tackle
+* Load testing Keycloak (5)
++
+(Present capabilities of Keycloak Benchmark Project and alternatives)
++
+(Sebastian Schuster has something to share, Dominik Schlosser)
+* How to scale Keycloak “small” and “big” (2)
+* What are the right metrics of Keycloak to watch and how to visualize them in a dashboard? (5)
++
+(Sebastian Schuster, Dominik Schlosser)
+* What do we already have for high availability? (1)
+* How to set up Keycloak for different clients (off the shelf software)? (0)
++
+(how to meet business and technical requirements)
+* Declarative configuration / configuration as code for Keycloak (7)
+* How to make Keycloak use less memory? (0)
+* How can I automate upgrades of Keycloak? (3)
+* Can we simplify how Keycloak is configured and set up? (5)
++
+(Leona)
+
+== Infinispan
+* How to configure the external Infinispan
+* Discuss why we need Infinispan / understand what it is doing today
+
+
+== How to measure success
+* Getting feedback on your setup from others
+* Updated documentation with recommendations
+* Scripted blueprint which is run in nightly tests against Keycloak
+* Having people contribute who haven’t contributed before
+* PRs open around this merged within a week.
+
+== Method of working
+- Present overviews of different setups - either in general, or more focused on a specific topic
+- Break out sessions in 1:1, and the present to the group
+
+== When to meet / time zones
+* Slack as asynchronous channel of communication:
+** create a Slack account for CNCF: https://slack.cncf.io/
+** Browse to #keycloak-sre-sig: https://cloud-native.slack.com/channels/keycloak-sre-sig
+* Meetup or not? Let’s discuss!
