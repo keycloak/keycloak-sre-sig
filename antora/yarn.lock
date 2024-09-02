@@ -21,17 +21,6 @@
     "@antora/user-require-helper" "~2.0"
     commander "~11.1"
 
-"@antora/collector-extension@^1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@antora/collector-extension/-/collector-extension-1.0.0-beta.1.tgz#26148c5a21f2297d07df537519302f8fb80bf884"
-  integrity sha512-VI4CsgV39u38ZVI+I5jjBapPhTA+Dle1pBC80hvBU1fLz+/DcDhzA2CAl7Ep32tjxP9sL6hOUhb/BmllVX0AcA==
-  dependencies:
-    "@antora/expand-path-helper" "~2.0"
-    cache-directory "~2.0"
-    fast-glob "~3.3"
-    isomorphic-git "~1.25"
-    js-yaml "~4.1"
-
 "@antora/content-aggregator@3.1.9":
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/@antora/content-aggregator/-/content-aggregator-3.1.9.tgz#7d266d7743d60d4d1ad40f9af8dd8be8f314d89d"
