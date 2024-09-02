@@ -6,6 +6,7 @@ on:
       - '.github/workflows/docs-ci.yml'
       - 'antora/**'
       - 'doc/**'
+      - 'README.adoc'
 
 concurrency:
   # Only run once for latest commit per ref and cancel other (previous) runs.
