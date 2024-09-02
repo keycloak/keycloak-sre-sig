@@ -5,7 +5,8 @@ When doing this, they follow the principles of Site Reliability Engineers, among
 
 The idea of this SIG is to speed up the feedback loop for existing and new features and to improve the communication between people operating Keycloak in real deployments and people developing Keycloak. Thanks to this collaboration, we can make Keycloak follow the SRE principles and make it easier to operate.
 
-.Desired outputs:
+Desired outputs:
+
 - Simplifying Keycloak’s configuration and upgrade process.
 - Collecting best practices and feedback from real-world Keycloak installations to identify and prioritize new features.
 - Educating users about what Keycloak can already do and what items are on the future roadmap.
@@ -19,9 +20,10 @@ The idea of this SIG is to speed up the feedback loop for existing and new featu
 
 == Meeting notes
 
-The meeting notes are available in the `meetings` directory of this repository.
+The meeting notes are available at https://www.keycloak.org/keycloak-sre-sig/meetings/
 
 == Communication channels
-Besides this GitHub repository we also use the following https://cloud-native.slack.com/channels/keycloak-sre-sig[Slack channel] for more interactive discussions.
+
+Besides this GitHub repository, we also use our https://cloud-native.slack.com/channels/keycloak-sre-sig[CNCF's #keycloak-sre-sig Slack channel] for more interactive discussions.
 
 

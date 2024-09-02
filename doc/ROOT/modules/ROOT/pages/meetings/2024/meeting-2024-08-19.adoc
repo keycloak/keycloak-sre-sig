@@ -1,10 +1,11 @@
 = 1st Keycloak SRE SIG Meeting (19th August 2024)
+:navtitle: 19th August 2024
 
 == Should we record? yes/no
 yes
 
 == Why having a SRE SIG?
-To learn from each other what Keycloak can do today, and to expand Keycloak capabilities,
+To learn from each other what Keycloak can do today, and to expand Keycloak capabilities.
 
 == Possible topics to tackle
 * Load testing Keycloak (5)

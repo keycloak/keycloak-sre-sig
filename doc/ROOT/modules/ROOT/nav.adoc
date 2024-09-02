@@ -1,1 +1,6 @@
 * xref:index.adoc[]
+* xref:meetings/index.adoc[]
++
+--
+include::partial$meetings.adoc[]
+--

@@ -1,0 +1,5 @@
+= Meetings
+
+Follow us on https://cloud-native.slack.com/channels/keycloak-sre-sig[CNCF's #keycloak-sre-sig Slack channel] to get notified about future meeting dates.
+
+include::partial$meetings.adoc[]

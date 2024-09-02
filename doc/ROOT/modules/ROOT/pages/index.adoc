@@ -1,4 +1,3 @@
-= Keycloak SRE SIG
 :navtitle: Welcome
+include::partial$README.adoc[]
 
-Welcome to Keycloak's Site Reliability Engineers Special Interest Group (SRE SIG)!
