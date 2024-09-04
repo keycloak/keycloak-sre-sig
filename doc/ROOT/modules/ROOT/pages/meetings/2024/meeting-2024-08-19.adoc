@@ -4,6 +4,9 @@
 == Should we record? yes/no
 yes
 
+The recording is available here: https://youtu.be/G0HiBVY4k8k
+It starts after the round of introductions.
+
 == Why having a SRE SIG?
 To learn from each other what Keycloak can do today, and to expand Keycloak capabilities.
 
