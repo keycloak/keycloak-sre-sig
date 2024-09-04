@@ -25,5 +25,6 @@ The meeting notes are available at https://www.keycloak.org/keycloak-sre-sig/mee
 == Communication channels
 
 Besides this GitHub repository, we also use our https://cloud-native.slack.com/channels/keycloak-sre-sig[CNCF's #keycloak-sre-sig Slack channel] for more interactive discussions.
+Use https://slack.cncf.io/ to join the CNCF slack if you don't have an account there.
 
 
