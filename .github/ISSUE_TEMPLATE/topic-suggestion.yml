@@ -1,0 +1,17 @@
+name: Topic suggestion
+description: Suggest a new topic to be discussed by the SRE special interest group
+title: "[TOPIC] "
+labels: ["topic"]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the topic
+      description: Provide a clear and concise description of what topic should be about
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: Links? References? Anything that will give us more context about the topic you are suggesting!
+    validations:
+      required: false
