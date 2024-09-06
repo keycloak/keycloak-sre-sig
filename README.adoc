@@ -18,6 +18,10 @@ Desired outputs:
 - What are the right metrics of Keycloak to watch and how to visualize them in a dashboard?
 - Can we simplify how Keycloak is configured and set up?
 
+=== Proposing a new topic
+
+If you have a topic you would like to discuss with the group, please https://github.com/keycloak/keycloak-sre-sig/issues/new?assignees=&labels=topic&projects=&template=topic-suggestion.yml[open a topic suggestion issue] in this repository.
+
 == Meeting notes
 
 The meeting notes are available at https://www.keycloak.org/keycloak-sre-sig/meetings/
