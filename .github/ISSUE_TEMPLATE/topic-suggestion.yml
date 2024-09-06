@@ -1,6 +1,5 @@
 name: Topic suggestion
 description: Suggest a new topic to be discussed by the SRE special interest group
-title: "[TOPIC] "
 labels: ["topic"]
 body:
   - type: textarea

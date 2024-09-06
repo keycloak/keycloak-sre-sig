@@ -13,14 +13,13 @@ Desired outputs:
 
 == Current topics
 
-- How to load test Keycloak?
-(Introduction of keycloak-benchmark project, identifying possible enhancements and presenting custom community solutions)
-- What are the right metrics of Keycloak to watch and how to visualize them in a dashboard?
-- Can we simplify how Keycloak is configured and set up?
+- How to load test Keycloak? https://github.com/keycloak/keycloak-sre-sig/issues/3[#3]
+- What are the right metrics of Keycloak to watch and how to visualize them in a dashboard? https://github.com/keycloak/keycloak-sre-sig/issues/4[#4]
+- Can we simplify how Keycloak is configured and set up? https://github.com/keycloak/keycloak-sre-sig/issues/5[#5]
 
 === Proposing a new topic
 
-If you have a topic you would like to discuss with the group, please https://github.com/keycloak/keycloak-sre-sig/issues/new?assignees=&labels=topic&projects=&template=topic-suggestion.yml[open a topic suggestion issue] in this repository.
+If you have a topic you would like to discuss with the group, please https://github.com/keycloak/keycloak-sre-sig/issues/new?labels=topic&template=topic-suggestion.yml[open a topic suggestion issue] in this repository.
 
 == Meeting notes
 
