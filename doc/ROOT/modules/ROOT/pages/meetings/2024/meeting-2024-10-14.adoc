@@ -1,0 +1,90 @@
+= 2nd Keycloak SRE SIG Meeting (14th October 2024)
+:navtitle: 14th October 2024
+
+The recording is available here: TODO!
+
+== Meeting purpose
+The desired outcome is to identify different approaches for load testing Keycloak with their individual strengths, and which tools to recommend to the broader Keycloak community.
+
+== Topics and presenters
+
+1. Current state of Keycloak benchmark (@ahus1 and @mhajas))
+2. Keycloak with many (1M+) offline sessions using Azure Load Testing (@sschu)
+3. Load testing using "f1" (golang based load testing library) and our rationale behind not using Keycloak benchmark (@dominikschlosser and Stefan Klein)
+
+=== 1. Keycloak benchmark
+
+* Official tool living under Keycloak organization - https://github.com/keycloak/keycloak-benchmark[repository], https://www.keycloak.org/keycloak-benchmark/[documentation]
+* Consists of 3 main parts - provisioning, dataset creation, load running
+* Provisioning Keycloak with monitoring stack
+  - Local Minikube setup with services
+  - Single cluster and multi site setup with Openshift
+  - Contains Grafana dashboards
+* Dataset provider
+  - Keycloak extension
+  - Creates entities in Keycloak (realms, clients, users, roles, etc)
+* Load running
+  - Using Gatling
+  - Local and distributed (from AWS EC2 instances) load running
+  - Various scenarios + contains reusable steps for custom scenarios
+* Extras
+  - Automation using Github Actions
+  - Repository contains result-data branch with perf results over longer period of time
+  - Results in private Horreum instance - may be public in future
+
+=== 2. Azure load running
+* Running Keycloak SaaS at Bosch
+* >70 Keycloak instances, ~2M monthly active users
+* Problems
+- Many offline sessions because of mobile apps
+- Regular restarts because of growing offline sessions in memory and many GCs
+- State transfer timeouts
+* Testing
+- Production like environment
+- Azure load testing
+- JMeter test for creating scenarios and upload jmx to Azure
+- Charged by thread - could get really expensive
+- Using Grafana dashboards for displaying Keycloak metrics
+* Scenario
+- Preload offline sessions
+- Perform authentication code flow
+- Refresh token requests
+- Logout
+* Lessons learned
+- Starts failing with 3.5 millions of offline sessions in memory
+- 18GB of memory is enough for 3M sessions
+- State transfer timeout needs to be adjusted with so many sessions in memory
+- Never got OOM exception - the system got slower because of many GCs and eventually killed by a liveness probe (async probes didn’t help, Java GC ratio didn’t help, using G1GC)
+- Offline tokens store IDP token with consumes a lot of memory
+- String deduplication saved memory (18GB -> 15GB)
+- Offline sessions preloading would be nice as a feature of dataset provider for filling memory
+
+=== 3. Load testing with F1
+* Deployments they run
+- Varying between 20 - 12 million users, 1000 requests per second
+- A lot of custom extensions
+- Running on Apache Cassandra
+- Custom login flows
+* Why not Keycloak Benchmark
+- Lots of customizations, custom REST api and CLI tool written in Go (for example, custom endpoint for creating users that needs to be used)
+- Don’t want a published URL - because they didn’t want to test infrastructure outside of Keycloak (load balancer, waf, …)
+- Prefer Go to Scala
+* F1
+- Golang load running tool - repository
+- More lightweight than Gatling/Keycloak benchmark (still enough functionality)
+- Easily integrated with their CLI tool, basically reusing Go functions in scenarios
+- Using distributed load running across more nodes
+* Scenarios
+- Creating/deleting users
+- UI logins
+- Refreshing a lot of tokens
+* Simplistic reports
+* Using Grafana dashboards
+* Summary: Not replacement for KCB - less features but enough for them
+
+== Outcomes
+
+* Keycloak benchmark is missing docs on how to create custom scenarios
+* Keycloak benchmark is missing docs on how to extend dataset provider with custom data
+* How to tune G1GC to throw exception on OOM instead of having too much CPU time spent on GC
+* Missing Keycloak configuration for state transfer timeout
