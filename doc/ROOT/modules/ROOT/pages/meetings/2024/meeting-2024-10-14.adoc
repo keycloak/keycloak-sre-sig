@@ -1,7 +1,7 @@
 = 2nd Keycloak SRE SIG Meeting (14th October 2024)
 :navtitle: 14th October 2024
 
-The recording is available here: TODO!
+The recording is available https://youtu.be/P1Ck1Wa9ufo[on YouTube].
 
 == Meeting purpose
 The desired outcome is to identify different approaches for load testing Keycloak with their individual strengths, and which tools to recommend to the broader Keycloak community.
