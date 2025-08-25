@@ -11,14 +11,14 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.1.9":
-  version "3.1.9"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.9.tgz#6be4dd2e63660d0540b3b8714e511c609c12f712"
-  integrity sha512-kCUqWX3G/9Pvf8SWZ45ioHwWdOc9uamy2E5/FFwyGiTeu4ubNbadOauLVvMzSZHUxVDnGxXwCsmmQ2HwM919ew==
+"@antora/cli@^3.1.12":
+  version "3.1.12"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.12.tgz#b8162a02cd327b2cc573022c7207fb2b7ff77bbb"
+  integrity sha512-j6CPjaW+OcEMecZFWOa38WsT4UvNVXEwUJRRTITtGbIk4m7z7RMrFCeai4AUX6cidX9LgDkFq6w2mjrYeVSS+A==
   dependencies:
-    "@antora/logger" "3.1.9"
-    "@antora/playbook-builder" "3.1.9"
-    "@antora/user-require-helper" "~2.0"
+    "@antora/logger" "3.1.12"
+    "@antora/playbook-builder" "3.1.12"
+    "@antora/user-require-helper" "~3.0"
     commander "~11.1"
 
 "@antora/content-aggregator@3.1.9":
@@ -64,6 +64,11 @@
   resolved "https://registry.yarnpkg.com/@antora/expand-path-helper/-/expand-path-helper-2.0.0.tgz#2e7e8fe35ed97049a8f5f971a63a7a75886e646d"
   integrity sha512-CSMBGC+tI21VS2kGW3PV7T2kQTM5eT3f2GTPVLttwaNYbNxDve08en/huzszHJfxo11CcEs26Ostr0F2c1QqeA==
 
+"@antora/expand-path-helper@~3.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@antora/expand-path-helper/-/expand-path-helper-3.0.0.tgz#5a38a35d04e5a60bfea686540155a1a922dc3d95"
+  integrity sha512-7PdEIhk97v85/CSm3HynCsX14TR6oIVz1s233nNLsiWubE8tTnpPt4sNRJR+hpmIZ6Bx9c6QDp3XIoiyu/WYYA==
+
 "@antora/file-publisher@3.1.9":
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/@antora/file-publisher/-/file-publisher-3.1.9.tgz#6ac1858a9130048dce930e87609595026e819e3d"
@@ -73,6 +78,16 @@
     "@antora/user-require-helper" "~2.0"
     vinyl "~3.0"
     yazl "~2.5"
+
+"@antora/logger@3.1.12":
+  version "3.1.12"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.1.12.tgz#f88098c071adccdf36e75a0bee0dbe4d595b84d1"
+  integrity sha512-u+rw3aFW7ScPyG/aWcxGnKJl/++34kzvdZEi3FIGjqtgsEmZ0A4UKbH3t4LZOiQiv9UdcHAiv5+lxQRx+7LgBQ==
+  dependencies:
+    "@antora/expand-path-helper" "~3.0"
+    pino "~9.2"
+    pino-pretty "~11.2"
+    sonic-boom "~4.0"
 
 "@antora/logger@3.1.9":
   version "3.1.9"
@@ -108,6 +123,16 @@
     "@antora/logger" "3.1.9"
     handlebars "~4.7"
     require-from-string "~2.0"
+
+"@antora/playbook-builder@3.1.12":
+  version "3.1.12"
+  resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.1.12.tgz#dbf11e89fb08a14988beaaf1129d0f599540ee32"
+  integrity sha512-5sizDOdg5SWMs84EWGRBzmej1V23tpGBwHOqjI2BJEGh8Sase1qC5uZXx6aJDEVbzmlGOm4RvysWbn9oap248A==
+  dependencies:
+    "@iarna/toml" "~2.2"
+    convict "~6.2"
+    js-yaml "~4.1"
+    json5 "~2.2"
 
 "@antora/playbook-builder@3.1.9":
   version "3.1.9"
@@ -184,6 +209,13 @@
   integrity sha512-5fMfBZfw4zLoFdDAPMQX6Frik90uvfD8rXOA4UpXPOUikkX4uT1Rk6m0/4oi8oS3fcjiIl0k/7Nc+eTxW5TcQQ==
   dependencies:
     "@antora/expand-path-helper" "~2.0"
+
+"@antora/user-require-helper@~3.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@antora/user-require-helper/-/user-require-helper-3.0.0.tgz#79a9a506cf4643a6f24b2ee408d86daa7916676c"
+  integrity sha512-KIXb8WYhnrnwH7Jj21l1w+et9k5GvcgcqvLOwxqWLEd0uVZOiMFdqFjqbVm3M+zcrs1JXWMeh2LLvxBbQs3q/Q==
+  dependencies:
+    "@antora/expand-path-helper" "~3.0"
 
 "@asciidoctor/core@~2.2":
   version "2.2.8"
