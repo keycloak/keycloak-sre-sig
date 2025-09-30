@@ -11,13 +11,13 @@
     "@antora/user-require-helper" "~3.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.1.12":
-  version "3.1.12"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.12.tgz#b8162a02cd327b2cc573022c7207fb2b7ff77bbb"
-  integrity sha512-j6CPjaW+OcEMecZFWOa38WsT4UvNVXEwUJRRTITtGbIk4m7z7RMrFCeai4AUX6cidX9LgDkFq6w2mjrYeVSS+A==
+"@antora/cli@^3.1.13":
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.13.tgz#7461dabd66a4d073c595584a64baedc354336225"
+  integrity sha512-wZHxryIU7+aYfRxlm2yEgnSwYI2a8Zo377BPm98KCSsbOg7nA+5mycGT7N9AbV6QQutRJnMOdrlmv1d8HFZHLg==
   dependencies:
-    "@antora/logger" "3.1.12"
-    "@antora/playbook-builder" "3.1.12"
+    "@antora/logger" "3.1.13"
+    "@antora/playbook-builder" "3.1.13"
     "@antora/user-require-helper" "~3.0"
     commander "~11.1"
 
@@ -84,6 +84,16 @@
     pino-pretty "~11.2"
     sonic-boom "~4.0"
 
+"@antora/logger@3.1.13":
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.1.13.tgz#b5a054fd7253ba7992a4ee85363a8079fdec77ba"
+  integrity sha512-pxNP7OICPGureSSbrCmZbgv8XOay1966R7d0pa0KfCbEOeM9poBdi1x8Wp4uP6vEhpRg8zT/Dyv6A1kL5NKx0Q==
+  dependencies:
+    "@antora/expand-path-helper" "~3.0"
+    pino "~9.2"
+    pino-pretty "~11.2"
+    sonic-boom "~4.0"
+
 "@antora/lunr-extension@^1.0.0-alpha.10":
   version "1.0.0-alpha.10"
   resolved "https://registry.yarnpkg.com/@antora/lunr-extension/-/lunr-extension-1.0.0-alpha.10.tgz#6a030ad99c7095748d7507c7f3ecbbfeeb7c51f3"
@@ -113,6 +123,16 @@
   version "3.1.12"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.1.12.tgz#dbf11e89fb08a14988beaaf1129d0f599540ee32"
   integrity sha512-5sizDOdg5SWMs84EWGRBzmej1V23tpGBwHOqjI2BJEGh8Sase1qC5uZXx6aJDEVbzmlGOm4RvysWbn9oap248A==
+  dependencies:
+    "@iarna/toml" "~2.2"
+    convict "~6.2"
+    js-yaml "~4.1"
+    json5 "~2.2"
+
+"@antora/playbook-builder@3.1.13":
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.1.13.tgz#e66a97fa5e581f24d3b777e72af91d733283c4b0"
+  integrity sha512-ya2mc38xoIvpXrW4WFUdNI9MRA0OY3r25BHLhCB8YxExcAvKx3+n+9KrOCSRwK6NfApRxXazzIAxmC3mhtepew==
   dependencies:
     "@iarna/toml" "~2.2"
     convict "~6.2"
