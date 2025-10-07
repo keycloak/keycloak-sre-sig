@@ -11,13 +11,13 @@
     "@antora/user-require-helper" "~3.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.1.13":
-  version "3.1.13"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.13.tgz#7461dabd66a4d073c595584a64baedc354336225"
-  integrity sha512-wZHxryIU7+aYfRxlm2yEgnSwYI2a8Zo377BPm98KCSsbOg7nA+5mycGT7N9AbV6QQutRJnMOdrlmv1d8HFZHLg==
+"@antora/cli@^3.1.14":
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.14.tgz#232c9382816b3084cd02fc55245de7f95232e044"
+  integrity sha512-I6WcygMU2bFInjdURJjkYjo7K5M8B3lBB53v9OO0IcY0LhEY8Wa7IlZ7wVinf5qEjHvaYzRGTZVl6RsJtVt7Sw==
   dependencies:
-    "@antora/logger" "3.1.13"
-    "@antora/playbook-builder" "3.1.13"
+    "@antora/logger" "3.1.14"
+    "@antora/playbook-builder" "3.1.14"
     "@antora/user-require-helper" "~3.0"
     commander "~11.1"
 
@@ -74,16 +74,6 @@
     vinyl "~3.0"
     yazl "~2.5"
 
-"@antora/logger@3.1.13":
-  version "3.1.13"
-  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.1.13.tgz#b5a054fd7253ba7992a4ee85363a8079fdec77ba"
-  integrity sha512-pxNP7OICPGureSSbrCmZbgv8XOay1966R7d0pa0KfCbEOeM9poBdi1x8Wp4uP6vEhpRg8zT/Dyv6A1kL5NKx0Q==
-  dependencies:
-    "@antora/expand-path-helper" "~3.0"
-    pino "~9.2"
-    pino-pretty "~11.2"
-    sonic-boom "~4.0"
-
 "@antora/logger@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.1.14.tgz#18a8844ecb361a854b48bae0705d3f26522f0a21"
@@ -118,16 +108,6 @@
     "@antora/logger" "3.1.14"
     handlebars "~4.7"
     require-from-string "~2.0"
-
-"@antora/playbook-builder@3.1.13":
-  version "3.1.13"
-  resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.1.13.tgz#e66a97fa5e581f24d3b777e72af91d733283c4b0"
-  integrity sha512-ya2mc38xoIvpXrW4WFUdNI9MRA0OY3r25BHLhCB8YxExcAvKx3+n+9KrOCSRwK6NfApRxXazzIAxmC3mhtepew==
-  dependencies:
-    "@iarna/toml" "~2.2"
-    convict "~6.2"
-    js-yaml "~4.1"
-    json5 "~2.2"
 
 "@antora/playbook-builder@3.1.14":
   version "3.1.14"
